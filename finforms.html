@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login and Registration Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+body{ background-color: #e9caca;}
+
+.navbar{
+background: #002E6E;
+color: white;
+border:none;
+margin-bottom: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+color: #ffe8e8;
+}
+.navbar .navbar-nav {
+display: inline-block;
+float: none;
+vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+text-align: center;
+}
+
+form{
+background: #002E6E;
+padding: 40px;
+-webkit-box-shadow: 9px 15px 39px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 15px 39px -9px rgba(0,0,0,0.75);
+box-shadow: 9px 15px 39px -9px rgba(0,0,0,0.75);
+color: white;
+
+}
+
+.nav-tabs {
+margin-left: auto;
+border-bottom: 1px solid #ddd;
+margin-right: auto;
+display: table;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+.nav-tabs>li>a {
+border-radius: 0px;
+background: #002E6E;
+color: white;
+}
+.nav-tabs>li>a:hover {
+border-radius: 0px;
+background: #002E6E;
+color: white;
+}
+
+</style>    
+
+  </head>
+
+    <body>
+
+  
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      </div>
+  </div>
+</nav>
+    
+    <div class="row">
+      <h1 align="center">Welcome to BrightEdu, Please Sign Up or Login!</h1>
+
+    <div class="col-sm-offset-3 col-sm-6">
+  
+   <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#Login">Login</a></li>
+      <li><a data-toggle="tab" href="#signup">Sign Up</a></li>
+    </ul>
+
+<div class="tab-content">
+  <div id="Login" class="tab-pane fade in active">
+    <form name="f_login" method="post" action="connect1s.php"><br>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+  </div>
+  <div id="signup" class="tab-pane fade">
+    <form name="f_reg" method="post" action="connect2s.php"><br>
+     <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="f_name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Mobile Number</label>
+    <input type="Number" class="form-control" id="exampleInputEmail1" name="mno">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+  </div>
+  
+</div>
+
+    </div>
+
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+  </body>
+</html>
