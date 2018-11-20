@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>  
+<html>
+<head>
+<style>
+    body{
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>  
+
+<h2>Edit Profile</h2>
+<p><span class="error">* required field.</span></p>
+<form method="post" action="form_submit.php" >  
+  Name: <input type="text" name="name" value="Enter your name">
+  <!--<span class="error">* <?php echo $nameErr;?></span>-->
+  <br><br>
+  E-mail: <input type="text" name="email" value="Enter your email">
+  <!--<span class="error">* <?php echo $emailErr;?></span>-->
+  <br><br>
+  Phone Number: <input type="Number" name="website" value="Enter your number">
+  <!--<span class="error"><?php echo $websiteErr;?></span>-->
+  <br><br>
+  Qualifications: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <!--<span class="error">* <?php echo $genderErr;?></span>-->
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+
+</body>
+</html>
